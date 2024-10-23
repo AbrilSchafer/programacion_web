@@ -1,0 +1,233 @@
+body {
+    font-family: "Work Sans", sans-serif;
+    font-size: 22px;
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: #F3EEE3;
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0; /* Posiciona el header en la parte superior */
+    left: 0; /* Alinea el header a la izquierda */
+    width: 100%; /* Asegura que el header ocupe todo el ancho */
+    z-index: 1000; /* Asegura que el header esté encima de otros elementos */
+}
+
+/* Logo y nombre */
+.header-container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex: 2;
+    height: 100px; /* Mantiene la altura del header */
+    margin-top: 1mm; 
+}
+
+.header-container img {
+    height: 100px;
+    margin-right: 20px;
+}
+
+.header-container .logo-text {
+    font-family: "Homemade Apple", cursive;
+    font-size: 40px;
+    margin-top: 13px;
+}
+
+/* Carro de compra */
+.cart-container {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    transform: translateX(-2cm); /* Mueve el carro de compra 1 cm a la izquierda */
+}
+
+.cart-icon {
+    font-size: 30px;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 50%;
+    padding: 3px 7px;
+    font-size: 12px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #F3EEE3;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Work Sans", sans-serif;
+}
+
+.follow-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow-us p {
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+.social-icons a {
+    margin: 10px;
+    color: #000;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.copyright {
+    margin-top: 5px;
+    font-size: 20px;
+    color: #000;
+    font-family: "Work Sans", sans-serif;
+}
+
+/* Icono de wpp */
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 80px;
+    height: 80px;
+    z-index: 1000; 
+}
+
+.whatsapp-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Detalles de producto */
+
+.product-detail-container {
+    display: flex;
+    justify-content: center; /* Centra los contenedores de imagen y texto */
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* Permitir que los elementos se adapten si el espacio es pequeño */
+}
+
+.product-image-container {
+    flex: 1;
+    max-width: 65%;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    border-right: 2px solid #ccc; /* Línea divisoria entre los contenedores */
+    padding-top: 30mm; /* Espacio en blanco de 30 mm dentro del contenedor */
+}
+
+.product-image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+    background-color: white; /* Color de fondo para rellenar el espacio sobrante */
+}
+.product-info-container {
+    flex: 1;
+    max-width: 35%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center; /* Centra todos los elementos */
+    text-align: center; /* Centra el texto */
+}
+
+.product-info-container h1 {
+    font-size: 40px;
+    margin-top: 300px; /* Ajusta el margen si es necesario */
+    margin-bottom: 20px; /* Ajusta el margen si es necesario */
+    text-align: left; 
+}
+
+.product-info-container p {
+    font-size: 30px;
+    margin: 15px 0; /* Margen superior e inferior */
+    margin-bottom: 70px;
+}
+
+.product-info-container label {
+    font-size: 16px;
+    margin-bottom: 5px; /* Espacio alrededor de las etiquetas */
+    text-align: left; /* Alinear texto a la izquierda */
+    display: block; /* Asegura que las etiquetas ocupen el ancho completo */
+    margin-right: 25px; /* Espacio alrededor de las etiquetas */
+}
+
+.product-info-container .input-group {
+    display: flex; /* Usar flexbox para alinear etiqueta y campo */
+    align-items: center; /* Alinear verticalmente */
+    justify-content: flex-start; /* Alinear horizontalmente a la izquierda */
+    margin-bottom: 35px; /* Espacio alrededor de las etiquetas */
+
+
+}
+
+.product-info-container select {
+    font-size: 16px;
+    padding: 8px; /* Espaciado interno para mayor comodidad */
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 4px; /* Bordes redondeados */
+    width: 100%; /* Hace que el campo ocupe todo el ancho disponible */
+    max-width: 400px; /* Aumentar el ancho máximo según sea necesario */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    margin-left: 10px; /* Espacio entre la etiqueta y el campo */
+    text-align: center; /* Centra el texto dentro del input/select */
+}
+
+
+.product-info-container input[type="number"] {
+    font-size: 16px;
+    padding: 8px; /* Espaciado interno para mayor comodidad */
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 4px; /* Bordes redondeados */
+    width: 100%; /* Hace que el campo ocupe todo el ancho disponible */
+    max-width: 100px; /* Limita el ancho máximo */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    margin-left: 10px; /* Espacio entre la etiqueta y el campo */
+    text-align: center; /* Centra el texto dentro del input/select */
+}
+
+
+
+
+.btn {
+    font-size: 26px;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #45a049; /* Color de fondo gris */
+    color: whitesmoke; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    width: auto; /* Ancho automático */
+}
+
+.btn:hover {
+    background-color: darkgreen; /* Color de fondo al pasar el mouse */
+}
+

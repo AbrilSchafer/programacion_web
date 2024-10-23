@@ -1,34 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>1020 & más</title>
+    <link rel="icon" href="foto chica.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Miniver&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&family=Miniver&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-4"><div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                  
+
+    <header>
+        <div class="menu-container">
+            <!-- Ícono del menú -->
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <!-- Contenedor de la barra de búsqueda -->
+            <div class="search-container">
+                <input type="text" class="search-bar" id="searchInput" placeholder="Buscar productos...">
+                <button class="search-button" id="searchButton">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-search" viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="header-container">
+            <!-- Agrega un enlace que lleva a la página principal -->
+            <a href="index.html">
+                <img src="logo.png" alt="Logo del local">
+            </a>
+            <!-- Texto del nombre -->
+            <div class="logo-text">1020 & más</div>
+        </div>
+
+        </div>
+        <div class="account-container">
+            <div class="cart-container">
+                <span class="cart-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bag"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                    </svg>
+                </span>
+                <span class="cart-badge">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú lateral -->
+    <div id="sideMenu" class="side-menu">
+        <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">&times;</a>
+        <h2 class="menu-title">Productos</h2>
+        <a href="javascript:void(0)" onclick="filterProducts('all')">Mostrar todos</a>
+        <a href="javascript:void(0)" onclick="filterProducts('tutores')">Tutores</a>
+        <a href="javascript:void(0)" onclick="filterProducts('macetas')">Macetas</a>
+        <a href="javascript:void(0)" onclick="filterProducts('chapa')">Chapa</a>
+        <a href="javascript:void(0)" onclick="filterProducts('porta espirales')">Porta espirales</a>
+    </div>
+
+    <main>
+
+        <div class="container">
+            <img src="imagen1.jpg" class="imagen">
+            <img src="imagen2.jpg" class="imagen">
+            <img src="imagen3.jpg" class="imagen">
+        </div>
+
+        <div class="intermediate-block">
+            <h2>Hecho con amor </h2>
+        </div><div class="products-container" id="productsSection">
+            <div class="product-card" data-category="tutores" data-name="Nombre del Producto 1">
+                <img src="imagen1.jpg" class="product-image" alt="Producto 1">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html" onclick="guardarProducto('Nombre del Producto 1', 25.99, 'imagen1.jpg', ['red', 'blue', 'green'])">Nombre del Producto 1</a>
+                    </h3>
+                    <p class="product-price">$25.99</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: red;"></span>
+                        <span class="color" style="background-color: blue;"></span>
+                        <span class="color" style="background-color: green;"></span>
+                    </div>
                 </div>
-              </div></div>
-            <div class="col-sm-12 col-md-4">Columna 2</div>
-            <div class="col-sm-6 col-md-4">Columna 3</div> <!-- Cambié col-sm-5 a col-sm-6 -->
-            <div class="col-sm-6 col-md-4"><button type="button" class="btn btn-danger">Base class</button></div> <!-- Cambié col-sm-5 a col-sm-6 -->
+            </div>
+        
+            <div class="product-card" data-category="tutores" data-name="Nombre del Producto 2">
+                <img src="imagen3.jpg" class="product-image" alt="Producto 2">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html" onclick="guardarProducto('Nombre del Producto 2', 14.00, 'imagen3.jpg', ['red', 'violeta'])">Nombre del Producto 2</a>
+                    </h3>
+                    <p class="product-price">$25.99</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: red;"></span>
+                        <span class="color" style="background-color: green;"></span>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="product-card" data-category="macetas" data-name="Nombre del Producto 3">
+                <img src="imagen2.jpg" class="product-image" alt="Producto 3">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html" onclick="guardarProducto('Nombre del Producto 3', 19.99, 'imagen2.jpg')">Nombre del Producto 3</a>
+                    </h3>
+                    <p class="product-price">$19.99</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: yellow;"></span>
+                        <span class="color" style="background-color: black;"></span>
+                    </div>
+                </div>
+            </div>
         </div>
         
-    </div>
+
+    </main>
+
+    <footer>
+        <div class="follow-us">
+            <p>Seguinos en:</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/1020ymas/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/5491156412852" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Diseñado por
+                <a href="https://www.linkedin.com/in/abrilschafer/" target="_blank"
+                    style="color: inherit; text-decoration: none; font-weight: bold;">
+                    Abril Schafer
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5491156412852" class="whatsapp-button" target="_blank">
+        <img src="wpp.webp" alt="WhatsApp">
+    </a>
+
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
-
- <!-- ver cambio!!-->
- <!-- ver cambio!!22-->

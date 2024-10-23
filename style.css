@@ -1,4 +1,300 @@
-*{
-    border:1px solid red;
+body {
+    font-family: "Work Sans", sans-serif;
+    font-size: 22px;
+}
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    background-color: #F3EEE3;
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0; /* Posiciona el header en la parte superior */
+    left: 0; /* Alinea el header a la izquierda */
+    width: 100%; /* Asegura que el header ocupe todo el ancho */
+    z-index: 1000; /* Asegura que el header esté encima de otros elementos */
+}
+
+/* Menú botón y buscador */
+.menu-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 10px;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+    margin-top: -2mm; 
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.search-bar {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+    outline: none;
+
+}
+
+.search-button {
+    color: black;
+    border: black;
+    padding: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-button:hover {
+    background-color: whitesmoke;
+}
+
+/* Logo y nombre */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex: 2;
+    height: 100px; /* Mantiene la altura del header */
+    margin-left: 250px; /* Ajusta el margen según tu diseño */
+    margin-top: 1mm; 
+}
+
+.header-container img {
+    height: 100px;
+    margin-right: 20px;
+}
+
+.header-container .logo-text {
+    font-family: "Homemade Apple", cursive;
+    font-size: 40px;
+    margin-top: 13px;
+}
+
+/* Carro de compra */
+.cart-container {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    transform: translateX(-2cm); /* Mueve el carro de compra 1 cm a la izquierda */
+}
+
+.cart-icon {
+    font-size: 30px;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 50%;
+    padding: 3px 7px;
+    font-size: 12px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #F3EEE3;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Work Sans", sans-serif;
+}
+
+.follow-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow-us p {
+    margin-right: 25px;
+    font-size: 20px;
+}
+
+.social-icons a {
+    margin: 10px;
+    color: #000;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.copyright {
+    margin-top: 5px;
+    font-size: 20px;
+    color: #000;
+    font-family: "Work Sans", sans-serif;
+}
+
+/* Menú lateral */
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed; /* Asegúrate de que la posición sea fixed */
+    z-index: 2000; /* Mayor que el z-index del header */
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.side-menu a {
+    padding: 18px 8px 8px 60px; 
+    text-decoration: none;
+    font-size: 27px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.side-menu a:hover {
+    color: #0056b3;
+}
+
+.side-menu .close-btn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.menu-title {
+    font-size: 30px;
+    color: black;
+    text-align: left; 
+    margin-left: 40px; 
+    margin-bottom: 20px;
+}
+
+/* Main */
+
+
+/* Imagenes iniciales */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagen {
+    height: 1000px;
+    width: 33.3%; /* Ajusta el ancho también */
+    object-fit: cover; /* Recorta la imagen para que se ajuste al área sin deformarse */
+}
+
+/* Icono de wpp */
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 80px;
+    height: 80px;
+    z-index: 1000; 
+}
+
+.whatsapp-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hecho con amor */
+
+.intermediate-block {
+    text-align: center;
+    margin: 19px 0;
+    padding: 10px;
+    background-color: white;
+    border: 1px  white;
+}
+
+.intermediate-block h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: "Mansalva", sans-serif;
+}
+
+/* Productos */
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 productos por fila */
+    gap: 20px; /* Espacio entre productos */
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.product-image {
+    width: 100%;
+    height: 500px;
+}
+
+.product-info {
+    margin-top: 10px;
+    font-family: "Work Sans", sans-serif;
+}
+
+
+.product-name a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Hereda el color del texto del elemento padre */
+    font-size: 20px;
+    margin: 10px 0;
+    font-family: "Work Sans", sans-serif;
+}
+
+.product-name a:hover {
+    color: #333; /* Cambia el color al pasar el mouse (opcional) */
+}
+
+
+.product-price {
+    font-size: 19px;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: "Work Sans", sans-serif;
+}
+
+.product-colors {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+
+.color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #000;
 }
 
