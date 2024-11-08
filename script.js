@@ -122,7 +122,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Buscar mientras el usuario escribe
     searchInput.addEventListener('input', searchProducts);
+
+    // Actualizar contador del carrito
+    actualizarContadorCarrito();
+
+    // Agregar evento al ícono del carrito
+    document.querySelector('.cart-container').addEventListener('click', function() {
+        window.location.href = 'carrito.html';
+    });
 });
+
+// Agregar al inicio del archivo
+function actualizarContadorCarrito() {
+    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    // Contar el número de items diferentes en el carrito
+    document.querySelector('.cart-badge').textContent = carrito.length;
+}
 
 
 
