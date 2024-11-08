@@ -171,63 +171,111 @@ footer {
 }
 
 .product-info-container label {
-    font-size: 16px;
-    margin-bottom: 5px; /* Espacio alrededor de las etiquetas */
-    text-align: left; /* Alinear texto a la izquierda */
-    display: block; /* Asegura que las etiquetas ocupen el ancho completo */
-    margin-right: 25px; /* Espacio alrededor de las etiquetas */
+    font-size: 20px;
+    min-width: 80px; /* Ancho fijo para las etiquetas */
+    text-align: left;
+    margin-right: 25px;
 }
 
 .product-info-container .input-group {
-    display: flex; /* Usar flexbox para alinear etiqueta y campo */
-    align-items: center; /* Alinear verticalmente */
-    justify-content: flex-start; /* Alinear horizontalmente a la izquierda */
-    margin-bottom: 35px; /* Espacio alrededor de las etiquetas */
-
-
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Cambiado de flex-end a flex-start */
+    margin-bottom: 35px;
+    width: 400px; /* Ancho fijo para ambos grupos */
 }
 
 .product-info-container select {
-    font-size: 16px;
+    font-size: 18px;
     padding: 8px; /* Espaciado interno para mayor comodidad */
     border: 1px solid #ccc; /* Borde del campo */
     border-radius: 4px; /* Bordes redondeados */
-    width: 100%; /* Hace que el campo ocupe todo el ancho disponible */
-    max-width: 400px; /* Aumentar el ancho máximo según sea necesario */
-    box-sizing: border-box; /* Incluye padding y border en el ancho total */
-    margin-left: 10px; /* Espacio entre la etiqueta y el campo */
+    width: 253px; /* Mismo ancho para ambos inputs */
+    min-width: unset; /* Elimina el min-width anterior */
+    margin-left: 22px; /* Aumentado el margen izquierdo para mover más a la derecha */
     text-align: center; /* Centra el texto dentro del input/select */
+    appearance: none; /* Quita la apariencia por defecto */
+    padding-left: 0; /* Elimina el padding izquierdo para centrar mejor */
+    background-color: white; /* Fondo blanco base */
+    position: relative; /* Para el posicionamiento del color */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 1em;
 }
 
+.product-info-container select option {
+    padding: 8px;
+    padding-left: 30px;
+    position: relative;
+    background-color: white; /* Fondo blanco para las opciones */
+}
 
 .product-info-container input[type="number"] {
-    font-size: 16px;
+    font-size: 18px;
     padding: 8px; /* Espaciado interno para mayor comodidad */
     border: 1px solid #ccc; /* Borde del campo */
     border-radius: 4px; /* Bordes redondeados */
-    width: 100%; /* Hace que el campo ocupe todo el ancho disponible */
-    max-width: 100px; /* Limita el ancho máximo */
-    box-sizing: border-box; /* Incluye padding y border en el ancho total */
-    margin-left: 10px; /* Espacio entre la etiqueta y el campo */
+    width: 233px; /* Aumentado el ancho a 250px */
+    min-width: unset; /* Elimina el min-width anterior */
+    margin-left: 10px;
     text-align: center; /* Centra el texto dentro del input/select */
 }
-
-
 
 
 .btn {
-    font-size: 26px;
-    margin-top: 20px;
-    padding: 10px 15px;
-    background-color: #45a049; /* Color de fondo gris */
-    color: whitesmoke; /* Color del texto */
-    border: none; /* Sin borde */
-    border-radius: 8px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
-    width: auto; /* Ancho automático */
+    font-size: 22px;
+    margin-top: 30px;
+    padding: 15px 40px;  /* Padding más amplio */
+    background-color: #2E7D32;  /* Verde más elegante */
+    color: white;
+    border: none;
+    border-radius: 30px;  /* Bordes más redondeados */
+    cursor: pointer;
+    width: auto;
+    transition: all 0.3s ease;  /* Transición suave */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+    text-transform: uppercase;  /* Texto en mayúsculas */
+    font-weight: 600;  /* Texto más grueso */
+    letter-spacing: 1px;  /* Espaciado entre letras */
 }
 
 .btn:hover {
-    background-color: darkgreen; /* Color de fondo al pasar el mouse */
+    background-color: #1B5E20;  /* Verde más oscuro al hover */
+    transform: translateY(-2px);  /* Efecto de elevación */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);  /* Sombra más pronunciada al hover */
+}
+
+.btn:active {
+    transform: translateY(1px);  /* Efecto de presión */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Sombra más pequeña al hacer clic */
+}
+
+/* Estilo para las opciones del select */
+.color-option {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    gap: 10px;
+}
+
+.color-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.product-info-container select:hover {
+    border-color: #999;
+}
+
+.product-info-container select:focus {
+    outline: none;
+    border-color: #666;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 

@@ -12,11 +12,28 @@ if (producto) {
     colorSelect.innerHTML = '';
 
     // Añadir los colores al select
-    producto.colores.forEach(color => {
+    producto.colores.forEach((color, index) => {
         const option = document.createElement('option');
         option.value = color;
-        option.textContent = color.charAt(0).toUpperCase() + color.slice(1); // Capitalizar la primera letra
+        option.textContent = traducirColor(color);
+        // Seleccionar el primer color por defecto
+        if (index === 0) {
+            option.selected = true;
+        }
         colorSelect.appendChild(option);
     });
+}
+
+// Función para traducir nombres de colores
+function traducirColor(color) {
+    const traducciones = {
+        'red': 'Rojo',
+        'blue': 'Azul',
+        'green': 'Verde',
+        'yellow': 'Amarillo',
+        'black': 'Negro',
+        // Añade más traducciones según necesites
+    };
+    return traducciones[color] || color.charAt(0).toUpperCase() + color.slice(1);
 }
 
