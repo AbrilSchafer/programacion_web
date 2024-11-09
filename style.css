@@ -323,3 +323,108 @@ footer {
     color: black;
 }
 
+/* Media Queries para móviles (menos de 768px) */
+@media (max-width: 768px) {
+    /* Ajustes del header */
+    header {
+        justify-content: center;
+    }
+
+    .menu-container {
+        position: absolute;
+        left: 20px;
+    }
+
+    .header-container {
+        margin: 0;
+        justify-content: center;
+        flex: none;
+        width: auto;
+        transform: translateX(-30px); /* Mueve el contenedor hacia la izquierda */
+    }
+
+    .account-container {
+        position: absolute;
+        right: 20px;
+    }
+
+    .header-container img {
+        height: 60px;
+    }
+
+    .header-container .logo-text {
+        font-size: 24px;
+    }
+
+    /* Ocultar barra de búsqueda en móvil */
+    .search-container {
+        display: none;
+    }
+
+    /* Contenedor de imágenes iniciales */
+    .container {
+        flex-direction: column;
+    }
+
+    /* Ocultar imagen1 e imagen3 */
+    .container .imagen:first-child,
+    .container .imagen:last-child {
+        display: none;
+    }
+
+    /* Ajustar imagen2 */
+    .container .imagen:nth-child(2) {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: top center;
+    }
+
+    /* Ajustar texto intermedio */
+    .intermediate-block h2 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    /* Ajustar grid de productos */
+    .products-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .product-card {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .product-image {
+        height: 300px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .product-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* WhatsApp button */
+    .whatsapp-button {
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /* Ocultar el crédito del diseñador */
+    .copyright {
+        display: none;
+    }
+}
+
