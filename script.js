@@ -114,6 +114,16 @@ function searchProducts() {
 
 // Agregar event listeners para la búsqueda
 document.addEventListener('DOMContentLoaded', function() {
+    // Verificar si es la primera vez que se abre la página
+    const primeraVisita = !localStorage.getItem('visitaPrevia');
+    
+    if (primeraVisita) {
+        // Limpiar el carrito solo en la primera visita
+        localStorage.removeItem('carrito');
+        // Marcar que ya se visitó la página
+        localStorage.setItem('visitaPrevia', 'true');
+    }
+    
     const searchInput = document.getElementById('searchInput');
     const searchButton = document.getElementById('searchButton');
 
