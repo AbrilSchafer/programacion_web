@@ -53,7 +53,8 @@ document.querySelector('.btn').addEventListener('click', function() {
     );
 
     if (productoExistente !== -1) {
-        carrito[productoExistente].cantidad = cantidad;
+        // Sumar la nueva cantidad a la cantidad existente
+        carrito[productoExistente].cantidad += cantidad;
     } else {
         carrito.push({
             id: Date.now(),
