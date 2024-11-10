@@ -94,7 +94,7 @@ header {
     align-items: center;
     justify-content: flex-end;
     flex: 1;
-    transform: translateX(-1cm); /* Cambiado de -2cm a -1cm para mover el carro menos a la izquierda */
+    transform: translateX(-1.5cm); /* Cambiado de -2cm a -1cm para mover el carro menos a la izquierda */
 }
 
 .cart-icon {
