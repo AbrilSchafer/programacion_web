@@ -328,9 +328,7 @@ footer {
 
 @media (max-width: 768px) {
     /* Ajustes del header */
-    header {
-        justify-content: center;
-    }
+
 
     .menu-container {
         position: absolute;
@@ -342,12 +340,19 @@ footer {
         margin-left: -15px;
     }
 
+    header {
+        justify-content: center;
+        height: 80px;
+    }
+
     .header-container {
         margin: 0;
         justify-content: center;
         flex: none;
         width: auto;
-        transform: translateX(-30px); /* Mueve el contenedor hacia la izquierda */
+        transform: translateX(-30px);
+        position: relative;
+        top:5px;
     }
 
     .account-container {
