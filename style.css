@@ -22,14 +22,15 @@ header {
     display: flex;
     align-items: center;
     flex: 1;
-    padding: 10px;
+    padding: 10px 0 10px 10px;
 }
 
 .menu-icon {
     font-size: 30px;
     cursor: pointer;
     margin-right: 20px;
-    margin-top: -2mm; 
+    margin-top: -2mm;
+    margin-left: -10px;
 }
 
 
@@ -93,7 +94,7 @@ header {
     align-items: center;
     justify-content: flex-end;
     flex: 1;
-    transform: translateX(-2cm); /* Mueve el carro de compra 1 cm a la izquierda */
+    transform: translateX(-1cm); /* Cambiado de -2cm a -1cm para mover el carro menos a la izquierda */
 }
 
 .cart-icon {
