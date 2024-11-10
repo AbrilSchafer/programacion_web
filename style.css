@@ -94,7 +94,7 @@ header {
     align-items: center;
     justify-content: flex-end;
     flex: 1;
-    transform: translateX(-1.5cm); /* Cambiado de -2cm a -1cm para mover el carro menos a la izquierda */
+    transform: translateX(-2cm); /* Cambiado de -2cm a -1cm para mover el carro menos a la izquierda */
 }
 
 .cart-icon {
@@ -325,6 +325,7 @@ footer {
 }
 
 /* Media Queries para móviles (menos de 768px) */
+
 @media (max-width: 768px) {
     /* Ajustes del header */
     header {
@@ -334,6 +335,11 @@ footer {
     .menu-container {
         position: absolute;
         left: 20px;
+        padding: 10px 0 10px 10px;
+    }
+
+    .menu-icon {
+        margin-left: -15px;
     }
 
     .header-container {
@@ -426,6 +432,16 @@ footer {
     /* Ocultar el crédito del diseñador */
     .copyright {
         display: none;
+    }
+
+    .cart-container {
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 1;
+        transform: translateX(-1cm); /* Volvemos al valor original */
     }
 }
 
