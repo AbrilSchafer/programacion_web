@@ -413,5 +413,12 @@ footer {
         bottom: 20px;
         right: 20px;
     }
+
+    .product-info-container {
+        gap: 5px;
+        margin-bottom: 7px;/* Añadido para crear más espacio antes del footer */
+    }
+
+
 }
 

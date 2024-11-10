@@ -401,6 +401,7 @@ footer {
         padding: 0;
         width: 90%;
         margin: 0 auto;
+        margin-bottom: 25px; /* Añadido también para móvil */
     }
 
     .product-card {
@@ -441,7 +442,7 @@ footer {
         align-items: center;
         justify-content: flex-end;
         flex: 1;
-        transform: translateX(-1.5cm); /* Volvemos al valor original */
+        transform: translateX(-1.25cm); /* Volvemos al valor original */
     }
 }
 
