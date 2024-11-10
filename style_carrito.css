@@ -44,7 +44,7 @@ header {
 }
 
 .cart-container {
-    margin-top: 150px;
+    margin-top: 130px;
     padding: 20px;
     max-width: 1200px;
     margin-left: auto;
@@ -77,16 +77,16 @@ header {
 
 .item-details h3 {
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .item-details p {
-    margin: 8px 0;
+    margin: 5px 0;
 }
 
 .item-controls {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
     min-width: 150px;
     justify-content: center;
@@ -265,8 +265,19 @@ footer {
 /* Media Queries para móviles */
 @media (max-width: 768px) {
     /* Header */
-    .header-container {
+    header {
         justify-content: center;
+        height: 100px;
+    }
+
+    .header-container {
+        margin: 0;
+        justify-content: center;
+        flex: none;
+        width: auto;
+        transform: translateX(-30px);
+        position: relative;
+        top: 15px;
     }
 
     .header-container img {
@@ -302,10 +313,30 @@ footer {
 
     .cart-total {
         text-align: center;
+        margin-top: -50px;
     }
 
     .btn-comprar {
         width: 100%;
         font-size: 18px;
+        margin-top: -25px;
+    }
+
+    /* Footer */
+    .copyright {
+        display: none;
+    }
+
+    /* WhatsApp button */
+    .whatsapp-button {
+        width: 60px;
+        height: 60px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .cart-container {
+        margin-top: 110px; /* Reducido de 130px a 80px */
+        padding: 30px;
     }
 } 
