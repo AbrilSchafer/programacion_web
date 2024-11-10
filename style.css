@@ -333,11 +333,13 @@ footer {
     .menu-container {
         position: absolute;
         left: 20px;
+        top: 30px;
         padding: 10px 0 10px 10px;
     }
 
     .menu-icon {
         margin-left: -15px;
+        margin-top: -7px;
     }
 
     header {
@@ -447,7 +449,9 @@ footer {
         align-items: center;
         justify-content: flex-end;
         flex: 1;
-        transform: translateX(-1.25cm); /* Volvemos al valor original */
+        transform: translateX(-1.25cm) translateY(10px); /* Añadido translateY para mover hacia abajo */
     }
+
+
 }
 
