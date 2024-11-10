@@ -441,7 +441,7 @@ footer {
         align-items: center;
         justify-content: flex-end;
         flex: 1;
-        transform: translateX(-1cm); /* Volvemos al valor original */
+        transform: translateX(-1.25cm); /* Volvemos al valor original */
     }
 }
 
