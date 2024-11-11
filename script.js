@@ -142,7 +142,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Agregar al inicio del archivo
 function actualizarContadorCarrito() {
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
     // Contar el número de items diferentes en el carrito

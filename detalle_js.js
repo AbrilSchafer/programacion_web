@@ -32,7 +32,6 @@ function traducirColor(color) {
         'green': 'Verde',
         'yellow': 'Amarillo',
         'black': 'Negro',
-        // Añade más traducciones según necesites
     };
     return traducciones[color] || color.charAt(0).toUpperCase() + color.slice(1);
 }

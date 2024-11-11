@@ -10,11 +10,11 @@ header {
     padding: 10px 20px;
     border-bottom: 1px solid #ddd;
     background-color: #F3EEE3;
-    position: fixed; /* Fija el header en la parte superior */
-    top: 0; /* Posiciona el header en la parte superior */
-    left: 0; /* Alinea el header a la izquierda */
-    width: 100%; /* Asegura que el header ocupe todo el ancho */
-    z-index: 1000; /* Asegura que el header esté encima de otros elementos */
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
 }
 
 /* Logo y nombre */
@@ -23,7 +23,7 @@ header {
     align-items: left;
     justify-content: left;
     flex: 2;
-    height: 100px; /* Mantiene la altura del header */
+    height: 100px; 
     margin-top: 1mm; 
 }
 
@@ -46,7 +46,7 @@ header {
     align-items: center;
     justify-content: flex-end;
     flex: 1;
-    transform: translateX(-2cm); /* Mueve el carro de compra 1 cm a la izquierda */
+    transform: translateX(-2cm); /
 }
 
 .cart-icon {
@@ -120,11 +120,11 @@ footer {
 
 .product-detail-container {
     display: flex;
-    justify-content: center; /* Centra los contenedores de imagen y texto */
+    justify-content: center; 
     align-items: flex-start;
     gap: 20px;
     padding: 20px;
-    flex-wrap: wrap; /* Permitir que los elementos se adapten si el espacio es pequeño */
+    flex-wrap: wrap; 
 }
 
 .product-image-container {
@@ -136,15 +136,15 @@ footer {
     justify-content: center;
     align-items: center;
     height: 1000px;
-    border-right: 2px solid #ccc; /* Línea divisoria entre los contenedores */
-    padding-top: 30mm; /* Espacio en blanco de 30 mm dentro del contenedor */
+    border-right: 2px solid #ccc; 
+    padding-top: 30mm; 
 }
 
 .product-image-container img {
     max-width: 100%;
     max-height: 100%;
-    object-fit: contain; /* Mantiene la proporción de la imagen */
-    background-color: white; /* Color de fondo para rellenar el espacio sobrante */
+    object-fit: contain; 
+    background-color: white; 
 }
 .product-info-container {
     flex: 1;
@@ -153,26 +153,26 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    align-items: center; /* Centra todos los elementos */
-    text-align: center; /* Centra el texto */
+    align-items: center; 
+    text-align: center;
 }
 
 .product-info-container h1 {
     font-size: 40px;
-    margin-top: 300px; /* Ajusta el margen si es necesario */
-    margin-bottom: 20px; /* Ajusta el margen si es necesario */
+    margin-top: 300px; 
+    margin-bottom: 20px; 
     text-align: left; 
 }
 
 .product-info-container p {
     font-size: 30px;
-    margin: 15px 0; /* Margen superior e inferior */
+    margin: 15px 0; 
     margin-bottom: 70px;
 }
 
 .product-info-container label {
     font-size: 20px;
-    min-width: 80px; /* Ancho fijo para las etiquetas */
+    min-width: 80px; 
     text-align: left;
     margin-right: 25px;
 }
@@ -181,24 +181,24 @@ footer {
     font-size: 18px;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Cambiado de flex-end a flex-start */
+    justify-content: flex-start; 
     margin-bottom: 35px;
-    width: 400px; /* Ancho fijo para ambos grupos */
+    width: 400px; 
 }
 
 .product-info-container select {
     font-size: 18px;
-    padding: 8px; /* Espaciado interno para mayor comodidad */
-    border: 1px solid #ccc; /* Borde del campo */
-    border-radius: 4px; /* Bordes redondeados */
-    width: 253px; /* Mismo ancho para ambos inputs */
-    min-width: unset; /* Elimina el min-width anterior */
-    margin-left: 22px; /* Aumentado el margen izquierdo para mover más a la derecha */
-    text-align: center; /* Centra el texto dentro del input/select */
-    appearance: none; /* Quita la apariencia por defecto */
-    padding-left: 0; /* Elimina el padding izquierdo para centrar mejor */
-    background-color: white; /* Fondo blanco base */
-    position: relative; /* Para el posicionamiento del color */
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    width: 253px; 
+    min-width: unset; 
+    margin-left: 22px; 
+    text-align: center; 
+    appearance: none; 
+    padding-left: 0; 
+    background-color: white;
+    position: relative; 
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-position: right 15px center;
@@ -209,47 +209,46 @@ footer {
     padding: 8px;
     padding-left: 30px;
     position: relative;
-    background-color: white; /* Fondo blanco para las opciones */
+    background-color: white;
 }
 
 .product-info-container input[type="number"] {
     font-size: 18px;
-    padding: 8px; /* Espaciado interno para mayor comodidad */
-    border: 1px solid #ccc; /* Borde del campo */
-    border-radius: 4px; /* Bordes redondeados */
-    width: 233px; /* Aumentado el ancho a 250px */
-    min-width: unset; /* Elimina el min-width anterior */
+    padding: 8px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    width: 233px;
+    min-width: unset; 
     margin-left: 10px;
-    text-align: center; /* Centra el texto dentro del input/select */
+    text-align: center;
 }
-
 
 .btn {
     font-size: 22px;
     margin-top: 30px;
-    padding: 15px 40px;  /* Padding más amplio */
-    background-color: #2E7D32;  /* Verde más elegante */
+    padding: 15px 40px; 
+    background-color: #2E7D32;  
     color: white;
     border: none;
-    border-radius: 30px;  /* Bordes más redondeados */
+    border-radius: 30px;  
     cursor: pointer;
     width: auto;
-    transition: all 0.3s ease;  /* Transición suave */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
-    text-transform: uppercase;  /* Texto en mayúsculas */
-    font-weight: 600;  /* Texto ms grueso */
-    letter-spacing: 1px;  /* Espaciado entre letras */
+    transition: all 0.3s ease;  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+    text-transform: uppercase;  
+    font-weight: 600;  
+    letter-spacing: 1px;  
 }
 
 .btn:hover {
-    background-color: #1B5E20;  /* Verde más oscuro al hover */
-    transform: translateY(-2px);  /* Efecto de elevación */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);  /* Sombra más pronunciada al hover */
+    background-color: #1B5E20; 
+    transform: translateY(-2px);  
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .btn:active {
-    transform: translateY(1px);  /* Efecto de presión */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  /* Sombra más pequeña al hacer clic */
+    transform: translateY(1px); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 /* Estilo para las opciones del select */
@@ -325,7 +324,7 @@ footer {
     /* Contenedor principal del producto */
     .product-detail-container {
         flex-direction: column;
-        margin-top: 80px; /* Espacio para el header fijo */
+        margin-top: 80px; 
         padding: 0;
         width: 100%;
     }
@@ -392,7 +391,7 @@ footer {
     /* Botón */
     .btn {
         width: 90%;
-        margin: -5px auto 15px; /* Ajustado el margen superior a negativo para subirlo */
+        margin: -5px auto 15px; 
         font-size: 18px;
     }
 
@@ -401,7 +400,6 @@ footer {
         margin-top: auto;
     }
 
-    /* Ocultar el crédito del diseñador como en index */
     .copyright {
         display: none;
     }
@@ -416,6 +414,6 @@ footer {
 
     .product-info-container {
         gap: 5px;
-        margin-bottom: 7px;/* Añadido para crear más espacio antes del footer */
+        margin-bottom: 7px;
     }
 }
