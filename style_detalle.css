@@ -306,9 +306,9 @@ footer {
 
     .cart-container {
         position: absolute;
-        right: 85px; /* Ajustado a 85px como solicitado */
+        right: 75px;
         top: 50%;
-        transform: translateY(-50%);
+        transform: translateY(-30%);
     }
 
     /* Ajustar el tamaño del ícono del carrito */
