@@ -304,7 +304,7 @@ footer {
     .item-controls {
         position: static;
         transform: none;
-        margin-top: 15px;
+        margin-bottom: 20px;
     }
 
     .cart-footer {

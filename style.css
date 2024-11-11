@@ -449,7 +449,7 @@ footer {
         align-items: center;
         justify-content: flex-end;
         flex: 1;
-        transform: translateX(-1.25cm) translateY(10px); /* Añadido translateY para mover hacia abajo */
+        transform: translateX(-1.25cm) translateY(7px); /* Añadido translateY para mover hacia abajo */
     }
 
 
