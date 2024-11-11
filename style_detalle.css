@@ -333,10 +333,11 @@ footer {
     /* Contenedor de la imagen */
     .product-image-container {
         max-width: 100%;
-        height: 350px; /* Reducido de 500px a 350px */
+        height: 350px;
         border-right: none;
         border-bottom: 1px solid #ccc;
-        padding-top: 10px;
+        padding-top: 20px;
+        margin-top: 20px;
     }
 
     .product-image-container img {
