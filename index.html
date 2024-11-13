@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1020 & más</title>
     <link rel="icon" href="foto chica.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Roboto:wght@400;500;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Miniver&family=Mansalva&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Roboto:wght@400;500;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Miniver&family=Mansalva&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -58,6 +60,7 @@
         <a href="javascript:void(0)" onclick="filterProducts('macetas')">Macetas</a>
         <a href="javascript:void(0)" onclick="filterProducts('chapa')">Chapa</a>
         <a href="javascript:void(0)" onclick="filterProducts('porta espirales')">Porta espirales</a>
+        <a href="javascript:void(0)" onclick="filterProducts('otros')">Otros</a>
     </div>
 
     <main>
@@ -70,56 +73,573 @@
 
         <div class="intermediate-block">
             <h2> Las manos hacen y dibujan lo que el corazón siente... </h2>
-        </div><div class="products-container" id="productsSection">
+
+
+        </div>
+        <div class="products-container" id="productsSection">
+
+            <div class="product-card" data-category="macetas" data-name="Vintage sin puntos" data-price="7500"
+                data-image="imagen3.jpg" data-colors='["crudo","verde pastel","rosa pastel"]'>
+                <img src="imagen3.jpg" class="product-image" alt="Vintage sin puntos">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Vintage sin puntos', '7500', 'imagen3.jpg', ['crudo','verde pastel','rosa pastel'])">Vintage
+                            sin puntos</a>
+                    </h3>
+                    <p class="product-price">$7.500</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #E8E4D5;"></span>
+                        <span class="color" style="background-color: #5CE4BE;"></span>
+                        <span class="color" style="background-color: #F79BA7;"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="macetas" data-name="Pajarito" data-price="10000"
+                data-image="Maceta pajarito.jpg" data-colors='["crudo","verde pastel","rosa pastel"]'>
+                <img src="Maceta pajarito.jpg" class="product-image" alt="Pajarito">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Pajarito', '10000', 'Maceta pajarito.jpg', ['crudo','verde pastel','rosa pastel'])">Pajarito</a>
+                    </h3>
+                    <p class="product-price">$10.000</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #E8E4D5;"></span>
+                        <span class="color" style="background-color: #5CE4BE;"></span>
+                        <span class="color" style="background-color: #F79BA7;"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="macetas" data-name="Japon puntitos" data-price="5000"
+                data-image="Japon puntitos.jpg" data-colors='["crudo"]'>
+                <img src="Japon puntitos.jpg" class="product-image" alt="Japon puntitos">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Japon puntitos', '5000', 'Japon puntitos.jpg', ['crudo'])">Japon
+                            puntitos</a>
+                    </h3>
+                    <p class="product-price">$5.000</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #E8E4D5;"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-card" data-category="macetas" data-name="Japon corazon" data-price="5000"
+                data-image="Japon corazon.jpg" data-colors='["crudo","verde pastel","rosa pastel","turquesa"]'>
+                <img src="Japon corazon.jpg" class="product-image" alt="Japon corazon">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Japon corazon', '5000', 'Japon corazon.jpg', ['crudo','rosa pastel','verde pastel','turquesa'])">Japon
+                            corazón</a>
+                    </h3>
+                    <p class="product-price">$5.000</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #E8E4D5;"></span>
+                        <span class="color" style="background-color: #F79BA7;"></span>
+                        <span class="color" style="background-color: #5CE4BE;"></span>
+                        <span class="color" style="background-color: #0EA792;"></span>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="macetas" data-name="Japon multicolor" data-price="5000"
+                data-image="Japon multicolor.jpg" data-colors='["crudo"]'>
+                <img src="Japon multicolor.jpg" class="product-image" alt="Japon multicolor">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Japon multicolor', '5000', 'Japon multicolor.jpg', ['crudo'])">Japon
+                            multicolor</a>
+                    </h3>
+                    <p class="product-price">$5.000</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #E8E4D5;"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="macetas" data-name="Naive deseos" data-price="7500"
+                data-image="Naive deseos.jpg" data-colors='["crudo","verde pastel","rosa pastel","turquesa","azul"]'>
+                <img src="Naive deseos.jpg" class="product-image" alt="Naive deseos">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Naive deseos', '7500', 'Naive deseos.jpg', ['crudo','rosa pastel','verde pastel','turquesa','azul'])">Naive
+                            deseos</a>
+                    </h3>
+                    <p class="product-price">$7.500</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #E8E4D5;"></span>
+                        <span class="color" style="background-color: #F79BA7;"></span>
+                        <span class="color" style="background-color: #5CE4BE;"></span>
+                        <span class="color" style="background-color: #0EA792;"></span>
+                        <span class="color" style="background-color: #128CC0;"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-card" data-category="tutores" data-name="Mandala" data-price="5000"
+                data-image="Mandala.jpg" data-colors='["rojo","naranja","turquesa","azul"]'>
+                <img src="Mandala.jpg" class="product-image" alt="Mandala">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Mandala', '5000', 'Mandala.jpg', ['rojo','naranja','turquesa','azul'])">Mandala</a>
+                    </h3>
+                    <p class="product-price">$5.000</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #B40B1B;"></span>
+                        <span class="color" style="background-color: #FF914D;"></span>
+                        <span class="color" style="background-color: #0EA792;"></span>
+                        <span class="color" style="background-color: #128CC0;"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-card" data-category="macetas" data-name="Maceta cono" data-price="10000"
+                data-image="Maceta Cono.jpg" data-colors='["rojo","naranja","crudo","turquesa","azul"]'>
+                <img src="Maceta Cono.jpg" class="product-image" alt="Maceta cono">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Maceta cono', '10000', 'Maceta Cono.jpg', ['rojo','naranja','crudo','turquesa','azul'])">Maceta
+                            cono</a>
+                    </h3>
+                    <p class="product-price">$10.000</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #B40B1B;"></span>
+                        <span class="color" style="background-color: #FF914D;"></span>
+                        <span class="color" style="background-color: #E8E4D5;"></span>
+                        <span class="color" style="background-color: #0EA792;"></span>
+                        <span class="color" style="background-color: #128CC0;"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="tutores" data-name="Tutor circular" data-price="3500"
+                data-image="Ciculares.jpg" data-colors='["turquesa","azul","violeta"]'>
+                <img src="Ciculares.jpg" class="product-image" alt="Tutor circular">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Tutor circular', '3500', 'Ciculares.jpg', ['turquesa','azul','violeta'])">Tutor
+                            circular</a>
+                    </h3>
+                    <p class="product-price">$3.500</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #0EA792;"></span>
+                        <span class="color" style="background-color: #128CC0;"></span>
+                        <span class="color" style="background-color: #690D8D;"></span>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-card" data-category="otros" data-name="Comedero pajarito" data-price="10000"
+                data-image="Comedero pajarito.jpg"
+                data-colors='["crudo","verde pastel","rosa pastel","turquesa","azul"]'>
+                <img src="Comedero pajarito.jpg" class="product-image" alt="Comedero pajarito">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Comedero pajarito', '10000', 'Comedero pajarito.jpg', ['crudo','rosa pastel','verde pastel','turquesa','azul'])">Comedero
+                            pajarito</a>
+                    </h3>
+                    <p class="product-price">$10.000</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #E8E4D5;"></span>
+                        <span class="color" style="background-color: #F79BA7;"></span>
+                        <span class="color" style="background-color: #5CE4BE;"></span>
+                        <span class="color" style="background-color: #0EA792;"></span>
+                        <span class="color" style="background-color: #128CC0;"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-card" data-category="chapa" data-name="Chapa Bienvenidos" data-price="20000"
+                data-image="Chapa Bienvenidos.jpg" data-colors='["crudo","turquesa","azul","rojo","naranja"]'>
+                <img src="Chapa Bienvenidos.jpg" class="product-image" alt="Bienvenido">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Chapa Bienvenidos', '20000', 'Chapa Bienvenidos.jpg', ['rojo','naranja','crudo','turquesa','azul'])">Chapa
+                            Bienvenidos</a>
+                    </h3>
+                    <p class="product-price">$20.000</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #B40B1B;"></span>
+                        <span class="color" style="background-color: #FF914D;"></span>
+                        <span class="color" style="background-color: #E8E4D5;"></span>
+                        <span class="color" style="background-color: #0EA792;"></span>
+                        <span class="color" style="background-color: #128CC0;"></span>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="tutores" data-name="Tutor deseo" data-price="3000"
+                data-image="Tutor deseo.jpg"
+                data-colors='["rojo","naranja","crudo","rosa pastel","verde pastel","turquesa","azul"]'>
+                <img src="Tutor deseo.jpg" class="product-image" alt="Tutor deseo">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Tutor deseo', '3000', 'Tutor deseo.jpg', ['rojo','naranja','crudo','rosa pastel','verde pastel','turquesa','azul'])">Tutor
+                            deseo</a>
+                    </h3>
+                    <p class="product-price">$3.000</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #B40B1B;"></span>
+                        <span class="color" style="background-color: #FF914D;"></span>
+                        <span class="color" style="background-color: #E8E4D5;"></span>
+                        <span class="color" style="background-color: #F79BA7;"></span>
+                        <span class="color" style="background-color: #5CE4BE;"></span>
+                        <span class="color" style="background-color: #0EA792;"></span>
+                        <span class="color" style="background-color: #128CC0;"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="otros" data-name="Pino de navidad" data-price="8000"
+                data-image="Pinito de Navidad.jpg" data-colors='["crudo","verde","rojo"]'>
+                <img src="Pinito de Navidad.jpg" class="product-image" alt="Pinito de Navidad">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Pinito de Navidad', '8000', 'Pinito de Navidad.jpg', ['crudo','rojo','verde'])">Pinito
+                            de Navidad</a>
+                    </h3>
+                    <p class="product-price">$8.000</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #E8E4D5;"></span>
+                        <span class="color" style="background-color: #B40B1B;"></span>
+                        <span class="color" style="background-color: #2A6131;"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="otros" data-name="Mandala canilla" data-price="10000"
+                data-image="Mandala canilla.jpg" data-colors='["crudo","verde pastel","turquesa","azul"]'>
+                <img src="Mandala canilla.jpg" class="product-image" alt="Mandala canilla">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Mandala canilla', '10000', 'Mandala canilla.jpg', ['crudo','verde pastel','turquesa','azul'])">Mandala
+                            canilla</a>
+                    </h3>
+                    <p class="product-price">$10.000</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #E8E4D5;"></span>
+                        <span class="color" style="background-color: #5CE4BE;"></span>
+                        <span class="color" style="background-color: #0EA792;"></span>
+                        <span class="color" style="background-color: #128CC0;"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="chapa" data-name="Chapa Dulce Hogar" data-price="15000"
+                data-image="Chapa dulce hogar.jpg" data-colors='["rojo","naranja","crudo","turquesa"]'>
+                <img src="Chapa dulce hogar.jpg" class="product-image" alt="Chapa Dulce Hogar">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Chapa Dulce Hogar', '15000', 'Chapa dulce hogar.jpg', ['rojo','naranja','crudo','turquesa'])">Chapa
+                            Dulce Hogar</a>
+                    </h3>
+                    <p class="product-price">$15.000</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #B40B1B;"></span>
+                        <span class="color" style="background-color: #FF914D;"></span>
+                        <span class="color" style="background-color: #E8E4D5;"></span>
+                        <span class="color" style="background-color: #0EA792;"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="tutores" data-name="Mandalita" data-price="4000"
+                data-image="Mandalita.jpg"
+                data-colors='["rojo","naranja","rosa pastel","verde pastel","turquesa","azul","violeta"]'>
+                <img src="Mandalita.jpg" class="product-image" alt="Mandalita">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Mandalita', '4000', 'Mandalita.jpg', ['rojo','naranja','rosa pastel','verde pastel','turquesa','azul','violeta'])">Mandalita</a>
+                    </h3>
+                    <p class="product-price">$4.000</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #B40B1B;"></span>
+                        <span class="color" style="background-color: #FF914D;"></span>
+                        <span class="color" style="background-color: #F79BA7;"></span>
+                        <span class="color" style="background-color: #5CE4BE;"></span>
+                        <span class="color" style="background-color: #0EA792;"></span>
+                        <span class="color" style="background-color: #128CC0;"></span>
+                        <span class="color" style="background-color: #690D8D;"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="otros" data-name="Campana" data-price="10000"
+                data-image="Campanas.jpg" data-colors='["rojo","naranja","violeta","turquesa"]'>
+                <img src="Campanas.jpg" class="product-image" alt="Campana">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Campana', '10000', 'Campanas.jpg', ['rojo','naranja','turquesa','violeta'])">Campana</a>
+                    </h3>
+                    <p class="product-price">$10.000</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #B40B1B;"></span>
+                        <span class="color" style="background-color: #FF914D;"></span>
+                        <span class="color" style="background-color: #0EA792;"></span>
+                        <span class="color" style="background-color: #690D8D;"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="tutores" data-name="Tutor huerta" data-price="3000"
+                data-image="Tutores huerta.jpg"
+                data-colors='["rojo","naranja","crudo","rosa pastel","verde pastel","turquesa","azul"]'>
+                <img src="Tutores huerta.jpg" class="product-image" alt="Tutor huerta">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Tutor huerta', '3000', 'Tutores huerta.jpg', ['rojo','naranja','crudo','rosa pastel','verde pastel','turquesa','azul'])">Tutor
+                            huerta</a>
+                    </h3>
+                    <p class="product-price">$3.000</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #B40B1B;"></span>
+                        <span class="color" style="background-color: #FF914D;"></span>
+                        <span class="color" style="background-color: #E8E4D5;"></span>
+                        <span class="color" style="background-color: #F79BA7;"></span>
+                        <span class="color" style="background-color: #5CE4BE;"></span>
+                        <span class="color" style="background-color: #0EA792;"></span>
+                        <span class="color" style="background-color: #128CC0;"></span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="product-card" data-category="porta espirales" data-name="Porta espirales" data-price="10000"
+                data-image="Portaespiral.jpg" data-colors='["rojo","naranja","crudo","turquesa","azul"]'>
+                <img src="Portaespiral.jpg" class="product-image" alt="Porta espirales">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Porta espiral', '10000', 'Portaespiral.jpg', ['rojo','naranja','crudo','turquesa','azul'])">Porta
+                            espiral</a>
+                    </h3>
+                    <p class="product-price">$10.000</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #B40B1B;"></span>
+                        <span class="color" style="background-color: #FF914D;"></span>
+                        <span class="color" style="background-color: #E8E4D5;"></span>
+                        <span class="color" style="background-color: #0EA792;"></span>
+                        <span class="color" style="background-color: #128CC0;"></span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="product-card" data-category="chapa" data-name="Chapa perchero cuadrado" data-price="17500"
+                data-image="Perchero cuadrado.jpg"
+                data-colors='["rojo","naranja","crudo","rosa pastel","turquesa","azul"]'>
+                <img src="Perchero cuadrado.jpg" class="product-image" alt="Perchero cuadrado">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Perchero cuadrado', '17500', 'Perchero cuadrado.jpg', ['rojo','naranja','crudo','rosa pastel','turquesa','azul'])">Perchero
+                            cuadrado</a>
+                    </h3>
+                    <p class="product-price">$17.500</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #B40B1B;"></span>
+                        <span class="color" style="background-color: #FF914D;"></span>
+                        <span class="color" style="background-color: #E8E4D5;"></span>
+                        <span class="color" style="background-color: #F79BA7;"></span>
+                        <span class="color" style="background-color: #0EA792;"></span>
+                        <span class="color" style="background-color: #128CC0;"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="macetas" data-name="Naive medalla" data-price="7500"
+                data-image="Naive medallita.jpg" data-colors='["azul"]'>
+                <img src="Naive medallita.jpg" class="product-image" alt="Naive medalla">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Naive medalla', '7500', 'Naive medallita.jpg', ['azul'])">Naive
+                            medalla</a>
+                    </h3>
+                    <p class="product-price">$7.500</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #128CC0;"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-card" data-category="tutores" data-name="Mini" data-price="3000" data-image="Mini.jpg"
+                data-colors='["rojo","naranja","rosa pastel","verde pastel","turquesa","azul","violeta"]'>
+                <img src="Mini.jpg" class="product-image" alt="Mini">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Mini', '3000', 'Mini.jpg', ['rojo','naranja','rosa pastel','verde pastel','turquesa','azul','violeta'])">Mini</a>
+                    </h3>
+                    <p class="product-price">$3.000</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #B40B1B;"></span>
+                        <span class="color" style="background-color: #FF914D;"></span>
+                        <span class="color" style="background-color: #F79BA7;"></span>
+                        <span class="color" style="background-color: #5CE4BE;"></span>
+                        <span class="color" style="background-color: #0EA792;"></span>
+                        <span class="color" style="background-color: #128CC0;"></span>
+                        <span class="color" style="background-color: #690D8D;"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="macetas" data-name="Maceta redonda" data-price="6500"
+                data-image="Redonda de apoyo.jpg" data-colors='["rojo","naranja","crudo","turquesa","azul"]'>
+                <img src="Redonda de apoyo.jpg" class="product-image" alt="Maceta redonda">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Maceta redonda', '6500', 'Redonda de apoyo.jpg', ['rojo','naranja','crudo','turquesa','azul'])">Maceta
+                            redonda</a>
+                    </h3>
+                    <p class="product-price">$6.500</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #B40B1B;"></span>
+                        <span class="color" style="background-color: #FF914D;"></span>
+                        <span class="color" style="background-color: #E8E4D5;"></span>
+                        <span class="color" style="background-color: #0EA792;"></span>
+                        <span class="color" style="background-color: #128CC0;"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="porta espirales" data-name="Porta espiral de apoyo"
+                data-price="7500" data-image="Portaespirales de apoyo.jpg"
+                data-colors='["rojo","naranja","crudo","azul"]'>
+                <img src="Portaespirales de apoyo.jpg" class="product-image" alt="Porta espiral de apoyo">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Porta espiral de apoyo', '7500', 'Portaespirales de apoyo.jpg', ['rojo','naranja','crudo','azul'])">Porta
+                            espiral de apoyo</a>
+                    </h3>
+                    <p class="product-price">$7.500</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #B40B1B;"></span>
+                        <span class="color" style="background-color: #FF914D;"></span>
+                        <span class="color" style="background-color: #E8E4D5;"></span>
+                        <span class="color" style="background-color: #128CC0;"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="tutores" data-name="Tutor flor" data-price="3500"
+                data-image="Tutor flor.jpg" data-colors='["rojo","naranja","turquesa","azul"]'>
+                <img src="Tutor flor.jpg" class="product-image" alt="Tutor flor">
+                <div class="product-info">
+                    <h3 class="product-name">
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Tutor flor', '3500', 'Tutor flor.jpg', ['rojo','naranja','turquesa','azul'])">Tutor
+                            flor</a>
+                    </h3>
+                    <p class="product-price">$3.500</p>
+                    <div class="product-colors">
+                        <span class="color" style="background-color: #B40B1B;"></span>
+                        <span class="color" style="background-color: #FF914D;"></span>
+                        <span class="color" style="background-color: #0EA792;"></span>
+                        <span class="color" style="background-color: #128CC0;"></span>
+                    </div>
+                </div>
+            </div>
+
             <div class="product-card" 
-                 data-category="tutores" 
-                 data-name="Nombre del Producto 1"
-                 data-price="25.99"
-                 data-image="imagen1.jpg"
-                 data-colors='["red","blue","green"]'>
-                <img src="imagen1.jpg" class="product-image" alt="Nombre del Producto 1">
+            data-category="otros" 
+            data-name="Maceta imantada" 
+            data-price="8000"
+            data-image="maceta imantada.jpg"
+            data-colors='["rojo","naranja","rosa pastel","verde pastel","turquesa","azul","violeta"]'>
+           <img src="maceta imantada.jpg" class="product-image" alt="Maceta imantada">
+           <div class="product-info">
+               <h3 class="product-name">
+                   <a href="detalle.html" onclick="guardarProducto('Maceta imantada', '8000', 'maceta imantada.jpg', ['rojo','naranja','rosa pastel','verde pastel','turquesa','azul','violeta'])">Maceta imantada</a>
+               </h3>
+               <p class="product-price">$8.000</p>
+               <div class="product-colors">
+                   <span class="color" style="background-color: #B40B1B;"></span>
+                   <span class="color" style="background-color: #FF914D;"></span>
+                   <span class="color" style="background-color: #F79BA7;"></span>
+                   <span class="color" style="background-color: #5CE4BE;"></span>
+                   <span class="color" style="background-color: #0EA792;"></span>
+                   <span class="color" style="background-color: #128CC0;"></span>
+                   <span class="color" style="background-color: #690D8D;"></span>
+               </div>
+           </div>
+       </div>
+
+            <div class="product-card" data-category="chapa" data-name="Chapa perchero circular" data-price="17500"
+                data-image="Perchero circular.jpg"
+                data-colors='["rojo","naranja","crudo","rosa pastel","turquesa","azul"]'>
+                <img src="Perchero circular.jpg" class="product-image" alt="Perchero circular">
                 <div class="product-info">
                     <h3 class="product-name">
-                        <a href="detalle.html" onclick="guardarProducto('Nombre del Producto 1', '25.99', 'imagen1.jpg', ['red','blue','green'])">Nombre del Producto 1</a>
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Perchero circular', '17500', 'Perchero circular.jpg', ['rojo','naranja','crudo','rosa pastel','turquesa','azul'])">Perchero
+                            circular</a>
                     </h3>
-                    <p class="product-price">$25.99</p>
+                    <p class="product-price">$17.500</p>
                     <div class="product-colors">
-                        <span class="color" style="background-color: red;"></span>
-                        <span class="color" style="background-color: blue;"></span>
-                        <span class="color" style="background-color: green;"></span>
+                        <span class="color" style="background-color: #B40B1B;"></span>
+                        <span class="color" style="background-color: #FF914D;"></span>
+                        <span class="color" style="background-color: #E8E4D5;"></span>
+                        <span class="color" style="background-color: #F79BA7;"></span>
+                        <span class="color" style="background-color: #0EA792;"></span>
+                        <span class="color" style="background-color: #128CC0;"></span>
                     </div>
                 </div>
             </div>
-        
-            <div class="product-card" data-category="tutores" data-name="Nombre del Producto 2" data-price="14.00" data-image="imagen3.jpg" data-colors='["red","green"]'>
-                <img src="imagen3.jpg" class="product-image" alt="Producto 2">
+
+            <div class="product-card" data-category="macetas" data-name="Vintage con puntos" data-price="7500"
+                data-image="Vintage con punto.jpg" data-colors='["crudo","verde pastel","rosa pastel"]'>
+                <img src="Vintage con punto.jpg" class="product-image" alt="Vintage con puntos">
                 <div class="product-info">
                     <h3 class="product-name">
-                        <a href="detalle.html" onclick="guardarProducto('Nombre del Producto 2', '14.00', 'imagen3.jpg', ['red','green'])">Nombre del Producto 2</a>
+                        <a href="detalle.html"
+                            onclick="guardarProducto('Vintage con puntos', '7500', 'Vintage con punto.jpg', ['crudo','verde pastel','rosa pastel'])">Vintage
+                            con puntos</a>
                     </h3>
-                    <p class="product-price">$14.00</p>
+                    <p class="product-price">$7.500</p>
                     <div class="product-colors">
-                        <span class="color" style="background-color: red;"></span>
-                        <span class="color" style="background-color: green;"></span>
-                    </div>
-                </div>
-            </div>
-        
-            <div class="product-card" data-category="macetas" data-name="Nombre del Producto 3" data-price="19.99" data-image="imagen2.jpg" data-colors='["yellow","black"]'>
-                <img src="imagen2.jpg" class="product-image" alt="Producto 3">
-                <div class="product-info">
-                    <h3 class="product-name">
-                        <a href="detalle.html" onclick="guardarProducto('Nombre del Producto 3', '19.99', 'imagen2.jpg', ['yellow','black'])">Nombre del Producto 3</a>
-                    </h3>
-                    <p class="product-price">$19.99</p>
-                    <div class="product-colors">
-                        <span class="color" style="background-color: yellow;"></span>
-                        <span class="color" style="background-color: black;"></span>
+                        <span class="color" style="background-color: #E8E4D5;"></span>
+                        <span class="color" style="background-color: #5CE4BE;"></span>
+                        <span class="color" style="background-color: #F79BA7;"></span>
                     </div>
                 </div>
             </div>
         </div>
-        
+
 
     </main>
 
@@ -154,6 +674,3 @@
 </body>
 
 </html>
-
-
-

@@ -120,6 +120,30 @@ function decrementarCantidad(id) {
     }
 }
 
+function actualizarSubtotal() {
+    let subtotal = 0;
+    const items = JSON.parse(localStorage.getItem('carrito')) || [];
+    
+    items.forEach(item => {
+        // Convertir el precio a número entero
+        const precio = parseInt(item.precio);
+        subtotal += precio * item.cantidad;
+    });
+
+    document.getElementById('subtotal').textContent = `$${subtotal.toLocaleString('es-CL')}`;
+    document.getElementById('total').textContent = `$${subtotal.toLocaleString('es-CL')}`;
+}
+
+// También asegúrate que al guardar el producto, el precio se guarde como entero
+function guardarProducto(nombre, precio, imagen, colores) {
+    const producto = {
+        nombre: nombre,
+        precio: parseInt(precio), // Convertir a entero
+        imagen: imagen,
+        colores: colores
+    };
+}
+
 // Inicializar la página
 document.addEventListener('DOMContentLoaded', () => {
     mostrarCarrito();
@@ -129,4 +153,20 @@ document.addEventListener('DOMContentLoaded', () => {
     if (btnComprar) {
         btnComprar.addEventListener('click', realizarCompra);
     }
-}); 
+});
+
+function formatPrice(price) {
+    return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".").replace(/\.(?=[^.]*$)/, ",");
+}
+
+function actualizarCarrito() {
+    const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+    const contenedorCarrito = document.getElementById('contenedor-carrito');
+    let total = 0;
+    
+    // ... código existente del carrito ...
+
+    // Cuando calcules el total, aplica el formato
+    total = carrito.reduce((sum, item) => sum + (item.precio * item.cantidad), 0);
+    document.getElementById('total').textContent = `$${formatPrice(total)}`;
+} 
