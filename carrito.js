@@ -93,7 +93,7 @@ function realizarCompra() {
     }
     
     const mensaje = generarMensajeWhatsApp();
-    const numeroWhatsApp = '5491156412852';
+    const numeroWhatsApp = '5491160249002';
     const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
     
     window.open(urlWhatsApp, '_blank');
